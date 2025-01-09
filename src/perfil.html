@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <!-- link remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>42 Quiz Front perfil</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="h-1/5">
+        <nav class="container m-auto flex justify-between items-center py-5 px-4">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="./assets/img/42_Quiz_logo-white.png" alt="42 Quiz" class="w-20 md:w-24 lg:w-28 xl:w-32" >
+                </a>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list hidden md:flex space-x-8" >
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link transition duration-300 ease-in-out hover:text-secondary">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link transition duration-300 ease-in-out hover:text-secondary">Rank</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link transition duration-300 ease-in-out hover:text-secondary">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="nav__btn hidden md:block bg-secondary py-1 px-5 rounded-sm cursor-pointer " >Login</button>
+                <div class="menu__toggle md:hidden cursor-pointer" id="menu-toggle" >
+                    <i class="ri-menu-line text-2xl md:hidden"></i>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden fixed inset-0 bg-opacity-60 flex items-center justify-end transform translate-x-full transition-all duration-300 ease-in-out backdrop-blur-sm">
+            <div class="bg-white bg-opacity-30 w-64 h-full p-4 space-y-4">
+                <div class="flex flex-col mt-10 gap-4 text-center" >
+                    <ul class="flex flex-col gap-4" >
+                        <li><a href="#" class="block text-white hover:text-gray-300">Home</a></li>
+                        <li><a href="#" class="block text-white hover:text-gray-300">Rank</a></li>
+                        <li><a href="#" class="block text-white hover:text-gray-300">Contactos</a></li>
+                    </ul>
+                    <button class="bg-secondary w-full text-white py-2 rounded-md hover:bg-secondary-dark transition duration-300 ease-in-out">Entrar</button>
+                </div>
+            </div>
+            <div class="absolute top-5 right-4 cursor-pointer text-2xl text-white" id="close-btn">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+     </header>
+     <!-- Header end -->
+
+</body>
+</html>

@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <!-- link remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>42 Quiz Front</title>
 </head>
-<body>
-    
 
+<body class="bg-primary text-white w-full min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="h-20">
+        <nav class="container mx-auto flex justify-between items-center py-5 px-4">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="./assets/img/42_Quiz_logo-white.png" alt="42 Quiz" class="w-20 md:w-24 lg:w-28 xl:w-32">
+                </a>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list hidden md:flex space-x-8">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link transition duration-300 ease-in-out hover:text-secondary">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link transition duration-300 ease-in-out hover:text-secondary">Rank</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#"
+                            class="nav__link transition duration-300 ease-in-out hover:text-secondary">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button
+                    class="nav__btn hidden md:block bg-secondary py-1 px-5 rounded-sm cursor-pointer ">Login</button>
+                <div class="menu__toggle md:hidden cursor-pointer" id="menu-toggle">
+                    <i class="ri-menu-line text-2xl md:hidden"></i>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu"
+            class="md:hidden fixed inset-0 bg-opacity-60 flex items-center justify-end translate-x-full transition-all duration-300 ease-in-out backdrop-blur-sm">
+            <div class="bg-white bg-opacity-30 w-64 h-full p-4 space-y-4">
+                <div class="flex flex-col mt-10 gap-4 text-center">
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="#" class="block text-white hover:text-gray-300">Home</a></li>
+                        <li><a href="#" class="block text-white hover:text-gray-300">Rank</a></li>
+                        <li><a href="#" class="block text-white hover:text-gray-300">Contactos</a></li>
+                    </ul>
+                    <button
+                        class="bg-secondary w-full text-white py-2 rounded-md hover:bg-secondary-dark transition duration-300 ease-in-out">Entrar</button>
+                </div>
+            </div>
+            <div class="absolute top-5 right-4 cursor-pointer text-2xl text-white" id="close-btn">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main -->
+    <main class="flex-grow">
+        <section class="container mx-auto xl:flex xl:justify-between items-center px-4 md:flex">
+            <div class="text-center md:text-left">
+                <h1
+                    class="bg-gradient-to-b from-secondary via-secondary-400 to-white bg-clip-text text-transparent font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-4">
+                    QUEM É QUEM NA <br>
+                    SUA COMUNIDADE DE <br>
+                    PROGRAMADORES?
+                </h1>
+                <p class="font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
+                    Desafie-se e descubra o quanto conhece <br>
+                    seus colegas programadores.
+                </p>
+                <button class="bg-secondary py-2 px-4 rounded-sm">Iniciar quiz</button>
+            </div>
+            <div class="mt-6 xl:mt-0">
+                <img src="./assets/img/woman1 1.png" alt="" class="w-full md:w-max  mx-auto xl:mx-0">
+            </div>
+        </section>
+    </main>
+
+    <!-- Ranking Section -->
+    <section class="bg-secondary w-full relative bottom-0 h-1/3 rounded-t-3xl flex justify-center items-center px-4 py-6" style="z-index: -1;">
+        <div class="flex justify-between items-center space-x-8">
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center"
+                style="border: 1px solid white; padding: 20px; border-radius: 30px; ">
+                <div
+                    class="bg-primary w-24 h-24 md:w-40 md:h-40 rounded-full flex justify-center items-center overflow-hidden group">
+                    <img class="w-full transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        src="./assets/img/hudson.png" alt="">
+                </div>
+                <div class="text-center mt-4 space-y-2">
+                    <h1 class="text-xl font-extrabold text-white">Hmateque</h1>
+                    <p class="text-lg font-medium text-white">50 pontos</p>
+                    <p class="text-sm font-light text-white italic">42 Luanda</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center"
+                style="border: 1px solid white; padding: 20px; border-radius: 30px; ">
+                <div
+                    class="bg-primary w-24 h-24 md:w-40 md:h-40 rounded-full flex justify-center items-center overflow-hidden group">
+                    <img class="w-full transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        src="./assets/img/hudson.png" alt="">
+                </div>
+                <div class="text-center mt-4 space-y-2">
+                    <h1 class="text-xl font-extrabold text-white">Hmateque</h1>
+                    <p class="text-lg font-medium text-white">50 pontos</p>
+                    <p class="text-sm font-light text-white italic">42 Luanda</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center"
+                style="border: 1px solid white; padding: 20px; border-radius: 30px; ">
+                <div
+                    class="bg-primary w-24 h-24 md:w-40 md:h-40 rounded-full flex justify-center items-center overflow-hidden group">
+                    <img class="w-full transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        src="./assets/img/hudson.png" alt="">
+                </div>
+                <div class="text-center mt-4 space-y-2">
+                    <h1 class="text-xl font-extrabold text-white">Hmateque</h1>
+                    <p class="text-lg font-medium text-white">50 pontos</p>
+                    <p class="text-sm font-light text-white italic">42 Luanda</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Main end -->
     <!-- script js -->
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
